@@ -1,0 +1,39 @@
+:root {
+  --primary--color: #ffffff;
+  --secondary--color: #f85555;
+  --tertiary--color: #dcd9d9;
+  --text--gray: #ababab;
+  --text--color: #515151;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: var(--primary--color);
+  color: var(--text--color);
+  font-family: Yantramanav, sans-serif;
+  font-size: 1rem;
+}
+#root {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Yantramanav, sans-serif;
+}
+.errors {
+  color: var(--secondary--color);
+}
