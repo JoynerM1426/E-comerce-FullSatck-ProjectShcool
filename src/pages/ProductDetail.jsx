@@ -92,8 +92,7 @@ const ProductDetail = () => {
         <Col xs={12} lg={4} className='colCarrousel'  >
           <Carousel activeIndex={activeIndex} onSelect={handleSelect} >
             {
-              detail?.productImgs?.map((element, index) => (
-
+              detail?.images?.map((element, index) => (
                 <Carousel.Item key={index} >
                   <img
                     className="centered-img"
@@ -104,13 +103,14 @@ const ProductDetail = () => {
 
                 </Carousel.Item>
               ))
+
             }
 
           </Carousel>
 
           <div className="miniature-container">
             {
-              detail?.productImgs?.map((element, index) => (
+              detail?.images?.map((element, index) => (
                 <img
                   key={index}
                   src={`${element.url}`}
